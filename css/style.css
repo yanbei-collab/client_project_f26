@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size:20px;
 }
 
@@ -7,10 +7,13 @@ header{
     background-color: lightcyan;
 }
 
-
+.logo{
+    display:block;
+    margin:0 auto;
+}
 
 nav li{
-    display: inline-block;
+    display:block;
     padding: 5px;
     margin: 5px;
     font-weight: bold;
@@ -18,7 +21,7 @@ nav li{
 
 a:hover, a:focus{
     font-weight: bolder;
-    color:darkorange;
+    color:darkgoldenrod;
 }
 
 nav li:hover, nav li:focus{
@@ -29,6 +32,7 @@ nav li:hover, nav li:focus{
 h1{
     font-size: 32px;
     padding:20px;
+    border-top: cornflowerblue 5px dashed;
 }
 
 h2{
@@ -59,8 +63,13 @@ h3{
 }
 
 /* reference */
-article,p, main ul, main ol, main a, main img{
-    padding: 10px 15px;
+article,p, main ul, main ol, main a{
+    padding: 15px;
+}
+
+iframe{
+    width: 100%;
+    height: auto;
 }
 
 #main{
@@ -70,15 +79,33 @@ article,p, main ul, main ol, main a, main img{
 
 #main section:nth-child(odd){
     grid-column: 1/span 5;
+    background-color: lightskyblue;
 }
 
 #main section:nth-child(even){
     grid-column: 2/span 5;
-   
+   background-color: lightsteelblue;
 }
 
 section{
     line-height: 1.25;
+}
+
+aside{
+    line-height:1.25;
+    grid-column: 2/span 5;
+}
+
+#main img{
+    width:90%;
+    height:auto;
+}
+
+#main table{
+    width:100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    padding:0;
 }
 
 footer{
