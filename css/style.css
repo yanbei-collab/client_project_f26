@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+
+header{
+    background-color: lightcyan;
+}
+
+
+
+nav li{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+a:hover, a:focus{
+    font-weight: bolder;
+    color:darkorange;
+}
+
+nav li:hover, nav li:focus{
+    border: 5px dotted darkgreen;
+}
+
+
+h1{
+    font-size: 32px;
+    padding:20px;
+}
+
+h2{
+    font-size:28px;
+    padding: 16px;
+    line-height: 1.5;
+}
+
+h3{
+    font-size:24px;
+    padding:12px;
+    line-height:1.5;
+}
+
+.skip{
+    position:absolute;
+    top:-50px;
+}
+
+.skip:focus{
+    top:20px;
+    left:5px;
+}
+
+.active{
+    background-color: lightgreen;
+    font-weight:bolder;
+}
+
+/* reference */
+article,p, main ul, main ol, main a, main img{
+    padding: 10px 15px;
+}
+
+#main{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#main section:nth-child(odd){
+    grid-column: 1/span 5;
+}
+
+#main section:nth-child(even){
+    grid-column: 2/span 5;
+   
+}
+
+section{
+    line-height: 1.25;
+}
+
+footer{
+    padding:30px;
+    background-color: lightgray;
+}
