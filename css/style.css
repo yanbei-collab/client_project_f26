@@ -1,10 +1,11 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     font-size:20px;
+    background-color: #FFCB05;
 }
 
 header{
-    background-color: lightcyan;
+    background-color: lightblue;
 }
 
 .logo{
@@ -19,20 +20,24 @@ nav li{
     font-weight: bold;
 }
 
+a:link{
+    color:#00274C;
+}
+
 a:hover, a:focus{
     font-weight: bolder;
-    color:darkgoldenrod;
 }
 
 nav li a:hover, nav li a:focus{
-    border: 5px dotted darkgreen;
+    border: 5px dotted #75988d;
 }
 
 
 h1{
     font-size: 32px;
     padding:20px;
-    border-top: cornflowerblue 5px dashed;
+    border-top: #00274C 5px dashed;
+    color:#00274C;
 }
 
 h2{
@@ -60,7 +65,7 @@ h3{
 }
 
 .active a{
-    background-color: lightgreen;
+    background-color: #00B2A9;
     font-weight:bolder;
 }
 
@@ -77,12 +82,12 @@ iframe{
 
 #main section:nth-child(odd){
     grid-column: 1/span 5;
-    background-color: lightskyblue;
+    background-color: #CFC096
 }
 
 #main section:nth-child(even){
     grid-column: 2/span 5;
-   background-color: lightsteelblue;
+   background-color:#75988d;
 }
 
 section{
@@ -93,7 +98,7 @@ section{
 aside{
     line-height:1.25;
     grid-column: 2/span 5;
-    background-color: lightyellow;
+    background-color: lightgray;
 }
 
 /* reference */
@@ -122,5 +127,5 @@ main ul, main ol{
 
 footer{
     padding:30px;
-    background-color: lightgray;
+    background-color: cornsilk;
 }
