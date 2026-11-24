@@ -13,6 +13,7 @@
    <header>
 
   <a class="skip" href = "#main">Skip to Main Content</a>
+  <div class="flex">
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="logo">
         <nav>
             <ul>
@@ -22,40 +23,46 @@
                 <li><a href = "after.html">After Your Experience</a></li>
             </ul>
         </nav>
+        </div>
     <h1>During Your Journey!</h1>
   </header>
-<main id="main">
+<main class="main" id="main">
   
 <section>
   <h2>Navigate Your Active Project</h2>
   <p>Master the art of adaptive project management, human-centered fieldwork, and constructive feedback as you execute your project in real time.</p>
 </section>
 
-<section>
+<section class="pi-flex">
+  <div>
   <h2>The Value of Navigating Friction & Active Execution</h2>
   <p>The middle of an engaged learning project is where real growth happens—and where real challenges surface. Real-world projects rarely follow a straight line. Requirements shift, team dynamics evolve, clients face unexpected internal constraints, and research data yields surprising results.</p>
   <p>The true value of this phase lies in developing resilience, adaptability, and ethical agility. Learning to manage "scope creep," navigate mid-project feedback, and re-align technical decisions with human needs are the exact experiences that distinguish top UMSI graduates. When you view friction not as a barrier, but as a natural part of the applied learning process, you develop the strategic problem-solving skills needed in modern information careers.</p>
+  </div>
   <img src="https://www.si.umich.edu/sites/default/files/styles/image_component/public/2024-06/roosstudents_alt.jpg?itok=17jAHugW"
   alt="UMSI students give RoosRoast new website designs that fit the vibe.">
 
 </section>
 
-<section>
+<section class="large">
   <h2>Phase 3: Managing & Executing in the Field</h2>
   <p>Conducting research, tracking progress, and maintaining clear communication with project sponsors.</p>
 
   <article>
+    <div>
     <h3>Focus & Objectives</h3>
     <ul>
       <li><strong>Use Fieldwork & Research Methods:</strong> Apply human-centered design tools to observe contexts and extract insights.</li>
       <li><strong>Keep Sponsor & Client Updated:</strong> Maintain transparency with regular progress reporting.</li>
       <li><strong>Construct Feedback Loops:</strong> Gather, evaluate, and integrate constructive feedback mid-project.</li>
     </ul>
+    </div>
     <img src="https://www.si.umich.edu/sites/default/files/styles/image_component/public/2026-03/UMSI_GMAutoUXPresentations_04172025_001%20%281%29.jpg?itok=Gl3_L3TU"
     alt="Students report their progress to their client with a display">
   </article>
 
   <article>
+    <div>
     <h3>Featured Resources & Handouts</h3>
     <table>
         <caption></caption>
@@ -111,6 +118,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
   </article>
 </section>
 
@@ -120,7 +128,21 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+
+    
+      <ul class="media">
+        <li><a href="https://www.instagram.com/umschoolofinformation">Instagram</a></li>
+        <li><a href="https://www.threads.com/@umschoolofinformation">Threads</a></li>
+        <li><a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/">Linkedin</a></li>
+        <li><a href="https://www.youtube.com/user/schoolofinformation">Youtube</a></li>
+        <li><a href="https://www.facebook.com/uomsi/">Facebook</a></li>
+        <li><a href="https://x.com/umsi">X</a></li>
+      </ul>
+      <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
+  
     </footer>
     
 </body>
