@@ -10,7 +10,6 @@ header{
 .flex{
     display:flex;
     gap:20px;
-    align-items: left;
 }
 
 .logo{
@@ -154,16 +153,18 @@ footer a:link, footer a:visited{
     list-style-type: none;
 }
 
-.h404 p{
-    font-size:32px;
-    font-weight:bold;
-    margin:20px 10px 0 10px;
+.h404 h1{
+    background-color: white;
 }
 
-p.gray{
+.h404 h2{
+    padding-bottom:10px;
+}
+
+h2.gray{
     color:#7c6a55;
-    margin:0 10px 10px 10px;
-    font-size:24px;
+    padding-top:0;
+    padding-bottom:20px;
 }
 
 .h404 ul{
@@ -178,6 +179,34 @@ p.gray{
     margin:30px;
     border:2px solid #00274C;
     border-radius: 10px;
+}
+
+form{
+    padding-left:20px;
+    margin-bottom:20px;
+}
+
+.suggestion{
+    margin-top:20px;
+}
+
+.radio-group div{
+    display:block;
+}
+
+textarea{
+    width:60%;
+}
+
+input[type="submit"] {
+    background-color: #FFCB05; 
+    color: #00274C; 
+    padding: 10px;
+    width: 30%;
+    font-weight:bold;
+    font-size:20px;
+    display:block;
+    margin:10px auto;
 }
 
 @media (min-width: 1020px){
